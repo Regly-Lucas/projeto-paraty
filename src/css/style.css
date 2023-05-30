@@ -1,0 +1,166 @@
+header div {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+header figure {
+    width: 150px
+}
+
+header img {
+    width: 100%;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner div {
+    background-image: url('../img/bg-estacao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.banner div h1,
+.banner div h2 {
+    z-index: 999;
+}
+
+.banner div h1 {
+    font-size: 80px;
+    font-weight: normal;
+}
+
+.banner div h2 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: -20px;
+}
+
+.banner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.container,
+.galeria {
+    max-width: 1024px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.sobre-a-cidade .container figure,
+.pontos-turisticos figure {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.sobre-a-cidade .container figure img,
+.pontos-turisticos .container figure img {
+    width: 100%;
+}
+
+.paragrafos {
+    text-align: left;
+}
+
+.sobre-a-cidade .paragrafos p {
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.sobre-a-cidade .paragrafos p::first-letter,
+.pontos-turisticos p::first-letter {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pontos-turisticos {
+    background-color: #E9E9E9;
+    padding: 40px 0;
+}
+
+.pontos-turisticos .paragrafos,
+.galeria-de-fotos .paragrafos {
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/seta.png');
+    margin-right: 10px;
+}
+
+.galeria-de-fotos h3 {
+    margin-bottom: 25px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.galeria img {
+    width: 32.5%;
+    opacity: 0.6;
+}
+
+.galeria img:hover {
+    opacity: 1;
+    cursor: pointer;
+    border: 3px solid blue;
+}
+.rodape{
+    background-color:#f5d505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 14px;
+}
